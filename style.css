@@ -1,0 +1,234 @@
+/*resetando o margin e padding*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilo do corpo*/
+body {
+    background-color: #f5f0e6fb;
+    font-family: "Fraunces", serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/*container para header e intro*/
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*configurações gerais do cabeçalho*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f5f0e6fb;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px #e8925cc5;
+}
+
+/*configurações gerais do menu*/
+nav {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    background-color: #b1d2e0;
+    border-radius: 30px;
+}
+
+/*estilo do menu*/
+nav a {
+    color: #912119;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+/*efeito menu*/
+nav a:hover {
+    color: #e8925c;
+}
+
+/*estilo da logo*/
+.logo {
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/*configurando a seção de introdução*/
+#intro {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f0e6fb;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*configurando a foto da intro*/
+#intro img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+/*configurando texto da intro*/
+#intro h1 {
+    font-size: 2.5rem;
+    color: #912119;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/*configurando para cada section ocupar a tela toda*/
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*estilizando os títulos de cada section*/
+section h2 {
+    font-size: 2rem;
+    color: #912119;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/*configuração de cores para cada section*/
+
+/*configurando section sobre mim*/
+#sobre-mim {
+    background-color: #c2d8d8; 
+    color: #912119;
+    font-size: 25px;
+}
+
+/*configurando section formação*/
+#formacao {
+    background-color: #f8a76c; 
+    color: #912119;
+    font-size: 25px;
+}
+
+/*configurando section portfólio*/
+#portfolio {
+    background-color: #b1d2e0; 
+    color: #912119; 
+    font-size: 25px;
+}
+
+/*estilizando os links da seção de portfólio*/
+#portfolio a {
+    color: #912119;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f8a76c;
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/*estilizando o efeito hover*/
+#portfolio a:hover {
+    background-color: #e8925c;
+    color: #fff;
+}
+
+/*configurando section contato*/
+#contato {
+    background-color: #fbcfc9;
+    color: #912119; 
+    font-size: 25px;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/*estilizando os títulos*/
+#contato h2 {
+    font-size: 2rem;
+    color: #912119;
+    margin-top: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/*estilizando os labels*/
+#contato label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*estilizando os campos de input*/
+#contato input[type="text"],
+#contato input[type="email"],
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/*estilizando a textarea para que usuário não redimensione*/
+#contato textarea {
+    resize: none;
+}
+
+/*estilizando o botão*/
+#contato button {
+    background-color: #f8a76c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/*mudando a cor do botão ao passar o mouse*/
+#contato button:hover {
+    background-color: #e8925c;
+}
